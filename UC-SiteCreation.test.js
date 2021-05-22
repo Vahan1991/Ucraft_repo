@@ -1,5 +1,5 @@
-import { Ucraft } from './UC-LogIn_LogOut'
-import { UcSelectors, UcDataCredentials } from './ucLogIn-out-Selectors-DataCredentials'
+import { Ucraft } from './UC-SiteCreation'
+import { UcSelectors, UcDataCredentials } from './ucSelectors-DataCredentials'
 
 const { chromium } = require('playwright');
 let browser;
@@ -10,7 +10,7 @@ beforeAll(async () => {
     browser = await chromium.launch({headless: false});
     // browserContext = await browser.newContext()
     // pageLogIn = await browserContext.newPage()
-  });
+});
 
 beforeEach(async () => {
     pageCreation = await browser.newPage();
@@ -21,8 +21,8 @@ beforeEach(async () => {
 // })
 
 
-describe("Test suite", ()=>{ 
-it('Test case is logIn/ Out', async () => {
+describe("Test suite", ()=> { 
+it('Test case is - Page creation', async () => {
         let uc = new Ucraft(pageCreation)
         await uc.open()
 
