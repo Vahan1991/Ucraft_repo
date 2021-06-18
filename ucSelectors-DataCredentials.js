@@ -11,7 +11,19 @@ export const UcSelectors = {
             yourSiteNameInput: "input[placeholder='Your site name']",
             getStartedSelector: "//button[text()='Get Started']",
             radioTenMonths: "//li[@class='plan checked']",
-            nextButton: "//div[text()='Next']"
+            nextButton: "//div[text()='Next']",
+            checkOutSelector: "[id='btn-checkout']",
+            getStartedSel: "//span[text()='Get Started']",
+            dashboardSel: "//div[@class='panel-item-ico uci-dashboard']/../.",
+            pagesSelector: "(//div[@class='dashboard-item-ico']/..)[1]",
+            containerHoverSel: "(//div[@class='content l'])[1]",
+            addPlusSel: "(//div[@class='add-page-plus'])[1]",
+            addBlankPageSel: "(//div[@class='slide-list-item'])[1]",
+            blankPageInputSel: '(//input[@type="text"])[4]/..',
+            addPlusSel_2: "(//div[@class='add-page-plus'])[1]",
+            addArticlesPageSel: "(//div[@class='slide-list-item'])[5]",
+            addArticlesPageInputSel: '(//input[@type="text"])[4]',
+            
         }
     ]
 }
@@ -21,7 +33,10 @@ export const UcDataCredentials = {
         {
             yourEmailInput: 'admin@ucraft.me',
             yourPassInput: 'weloveuc',
-            yourSiteNameInputData: 'jsautomationtesting'
+            yourSiteNameInputData: 'jsautomationtesting',
+            blankPageInputName: 'About us-1',
+            addArticlesPageName: 'Blog-2'
+
         }
     ]
 }
